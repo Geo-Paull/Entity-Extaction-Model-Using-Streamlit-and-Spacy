@@ -109,7 +109,7 @@ pyrsistent
 python-dateutil
 python-utils
 pytz
-pywin32
+Winpython
 pywinpty
 PyYAML
 pyzmq
