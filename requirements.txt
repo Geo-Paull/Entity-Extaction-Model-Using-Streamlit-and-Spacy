@@ -38,7 +38,7 @@ entrypoints
 fastapi
 flake8
 future
-gensim
+gensim==3.8.3
 gitdb
 GitPython
 gunicorn
