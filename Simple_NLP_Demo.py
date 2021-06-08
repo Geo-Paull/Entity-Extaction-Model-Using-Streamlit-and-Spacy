@@ -1,7 +1,7 @@
 import streamlit as st
 from textblob import TextBlob
 import nltk
-# nltk.download()
+nltk.download()
 from nltk.tokenize import sent_tokenize
 #NER Imports
 import spacy
