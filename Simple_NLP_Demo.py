@@ -28,18 +28,19 @@ st.sidebar.subheader("Kindly choose a service to start with:")
 option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
 st.sidebar.title("Curious about Me?")
-st.sidebar.write(" I am an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts") 
+st.sidebar.write(" I am an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
 st.sidebar.subheader("I'm popularly known for:")
-st.sidebar.text("------------------------------")
+st.sidebar.text("----------------------------------")
 st.sidebar.text("1. Sentiment Analysis")
 st.sidebar.text("2. Entity Extraction")
 st.sidebar.text("3. Text Summarization")
 st.sidebar.text("4. Name Entity Recognition [NER]")
 
 st.sidebar.text("==================================")
+
 st.sidebar.subheader("I was Created by:")
 st.sidebar.markdown('**Paul DADA**')
-st.sidebar.markdown('**(c) 2021**')
+st.sidebar.text('**(c) 2021**')
 
 #Textbox for text user is entering
 st.subheader("Type/paste the text you'd like to analyze.")
@@ -107,7 +108,7 @@ elif option == 'Entity Extraction':
     st.write("GPE Entities: " + str(entGPE))
 
 #Name Entity Recognizer
-elif option == 'Named Entity Recognizer':
+elif option == 'Named Entity Recognition':
     docx = nlp(text)
     res = spacy_streamlit.visualize_ner(docx, labels=nlp.get_pipe('ner').labels)
     st.write(res)
