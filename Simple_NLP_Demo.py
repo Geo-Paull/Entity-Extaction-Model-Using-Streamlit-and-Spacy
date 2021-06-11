@@ -17,8 +17,11 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("NLP Web Application Demo")
+st.title("NLP Web_App Project")
 st.subheader("Choose NLP service")
+
+#Picking what NLP task you want to do
+option = st.sidebar.selectbox('Select Service Below:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
 
 st.sidebar.title("About this Service")
 st.sidebar.subheader("A.I service for:")
@@ -30,15 +33,14 @@ st.sidebar.text("4. Name Entity Recognizer [NER]")
 
 st.sidebar.subheader("Authored By:")
 st.sidebar.markdown('**Paul DADA**')
-#Picking what NLP task you want to do
-option = st.selectbox('Select Service Below:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
+st.sidebar.markdown('**(c) 2021**')
 
 #Textbox for text user is entering
 st.subheader("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
 text = st.text_area('...', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long')
 
-st.button("RUN")
+st.button("RUN Service")
 
 #Display results of the NLP task
 st.header("Results")
