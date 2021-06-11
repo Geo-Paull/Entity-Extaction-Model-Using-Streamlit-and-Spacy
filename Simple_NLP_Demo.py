@@ -21,15 +21,16 @@ st.title("NLP Web_App Project")
 st.sidebar.subheader("Choose NLP service")
 
 #Picking what NLP task you want to do
-option = st.sidebar.selectbox('Select Service Below:', ('Home','Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
+option = st.sidebar.selectbox('Menu:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
 
 st.sidebar.title("About this Service")
-st.sidebar.subheader("A.I service for:")
-st.sidebar.text("                         ")
+st.sidebar.text(" This is a Text processing service, that auto-extracts and classifies entities, analyse sentiments, & summarises texts") 
+st.sidebar.subheader("Intelligent tool for:")
+st.sidebar.text("                        ")
 st.sidebar.text("1. Sentiment Analysis")
-st.sidebar.text("2. Entity Extractor")
-st.sidebar.text("3. Text Summarizer")
-st.sidebar.text("4. Name Entity Recognizer [NER]")
+st.sidebar.text("2. Entity Extraction")
+st.sidebar.text("3. Text Summarization")
+st.sidebar.text("4. Name Entity Recognition [NER]")
 
 st.sidebar.subheader("Authored By:")
 st.sidebar.markdown('**Paul DADA**')
@@ -44,10 +45,6 @@ st.button("RUN Service")
 
 #Display results of the NLP task
 st.header("Results")
-
-#Sentiment Analysis
-if option == 'Home':
-    st.write(" This is a Text processing service, that auto-extracts and classifies entities, analyse sentiments, & summarises texts")
 
 #Sentiment Analysis
 if option == 'Sentiment Analysis':
