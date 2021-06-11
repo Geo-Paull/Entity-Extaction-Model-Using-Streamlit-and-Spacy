@@ -19,10 +19,11 @@ nlp = spacy.load("en_core_web_sm")
 #Headings for Web Application
 st.title("Paul, the Document Multi-processing Bot")
 st.sidebar.header("Welcome Human!")
+st.sidebar.text("========================")
 st.sidebar.subheader("Choose Service")
 
 #Picking what NLP task you want to do
-option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
+option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
 st.sidebar.title("About this Service")
 st.sidebar.write(" This is an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises texts") 
