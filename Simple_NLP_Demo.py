@@ -45,9 +45,9 @@ st.sidebar.markdown('**pauldada.xyz**')
 st.sidebar.text('(c) 2021')
 
 #Textbox for text user is entering
+st.warning('NOTE \nAlmost there, paste text & click run SERVICE.')
 st.text("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
-st.info('Almost there, paste text & run SERVICE.')
 text = st.text_area('===>>>', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
 
 st.button("RUN Service")
