@@ -21,20 +21,20 @@ st.title("NLP Web Application Example")
 st.subheader("Choose NLP service")
 
 st.sidebar.title("About this Service")
-st.sidebar.subheader("Demo service for:")
+st.sidebar.subheader("A.I service for:")
 st.sidebar.text("                         ")
-st.sidebar.text("1. Sentiment _Analysis")
-st.sidebar.text("2. Entity _Extraction")
-st.sidebar.text("3. Text _Summarization")
-st.sidebar.text("4. Name _Entity Recognizer_(NER)")
+st.sidebar.text("1. Sentiment Analysis")
+st.sidebar.text("2. Entity Extractor")
+st.sidebar.text("3. Text Summarizer")
+st.sidebar.text("4. Name Entity Recognizer [NER]")
 
 st.sidebar.subheader("Authored By:")
 st.sidebar.markdown('**Paul DADA**')
 #Picking what NLP task you want to do
-option = st.selectbox('NLP Service', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
+option = st.selectbox('Select Service Below:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
 
 #Textbox for text user is entering
-st.subheader("Enter the text you'd like to analyze.")
+st.subheader("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
 text = st.text_area('...', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long')
 
@@ -99,7 +99,7 @@ elif option == 'Named Entity Recognizer':
 #Text Summarization
 else:
     summWords = summarize(text)
-    st.subheader("Summary")
+    st.subheader("Text Summary")
     st.write(summWords)
 
 
