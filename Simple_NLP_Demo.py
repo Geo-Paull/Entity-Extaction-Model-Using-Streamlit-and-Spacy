@@ -63,7 +63,7 @@ if option == 'Sentiment Analysis':
     st.text ("2) subjectivity: objective vs. subjective (+0.0 => +1.0)")
     #st.text ("3)    intensity: modifies next word?      (x0.5 => x2.0)")
     
-    st.subheader ("The sentiment of the overall text below.")
+    st.text ("The sentiment details of the overall text are:")
     st.write(sentimentTotal)
 
 elif option == 'Entity Extraction':
