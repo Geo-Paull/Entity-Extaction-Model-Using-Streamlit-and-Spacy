@@ -58,6 +58,10 @@ if option == 'Sentiment Analysis':
     #Polarity and Subjectivity of the entire text inputted
     sentimentTotal = entireText.sentiment
     st.write("The sentiment of the overall text below.")
+    st.subheader ("Each word in the lexicon has scores for:")
+    st.subheader ("1)     polarity: negative vs. positive    (-1.0 => +1.0)")
+    st.subheader ("2) subjectivity: objective vs. subjective (+0.0 => +1.0)")
+    st.subheader ("3)    intensity: modifies next word?      (x0.5 => x2.0)")
     st.write(sentimentTotal)
 
 elif option == 'Entity Extraction':
