@@ -40,7 +40,8 @@ st.sidebar.text("==================================")
 
 st.sidebar.subheader("I was Created by:")
 st.sidebar.markdown('**Paul DADA**')
-st.sidebar.text('**(c) 2021**')
+st.sidebar.markdown('**pauldada.xyz**')
+st.sidebar.text('(c) 2021')
 
 #Textbox for text user is entering
 st.subheader("Type/paste the text you'd like to analyze.")
