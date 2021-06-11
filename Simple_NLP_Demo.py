@@ -41,6 +41,7 @@ text = st.text_area('...', value='Type/Paste Text Here...', height=100, max_char
 #Display results of the NLP task
 st.header("Results")
 
+st.button("RUN")
 #Sentiment Analysis
 if option == 'Sentiment Analysis':
     #Creating graph for sentiment across each sentence in the text inputted
