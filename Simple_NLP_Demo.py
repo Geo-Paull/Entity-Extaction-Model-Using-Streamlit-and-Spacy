@@ -47,6 +47,7 @@ st.sidebar.text('(c) 2021')
 #Textbox for text user is entering
 st.text("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
+st..success('Almost there, paste text & run SERVICE.')
 text = st.text_area('===>>>', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
 
 st.button("RUN Service")
@@ -56,7 +57,6 @@ st.header("Results")
 
 #Sentiment Analysis
 if option == 'Sentiment Analysis':
-    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     #Creating graph for sentiment across each sentence in the text inputted
     sents = sent_tokenize(text) #tokenizing the text data into a list of sentences
     entireText = TextBlob(text) #storing the entire text in one string
@@ -81,7 +81,6 @@ if option == 'Sentiment Analysis':
     st.write(sentimentTotal)
 
 elif option == 'Entity Extraction':
-    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     #Getting Entity and type of Entity
     entities = [] #list for all entities
     entityLabels = [] #list for type of entities
@@ -113,14 +112,12 @@ elif option == 'Entity Extraction':
 
 #Name Entity Recognizer
 elif option == 'Named Entity Recognition':
-    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     docx = nlp(text)
     res = spacy_streamlit.visualize_ner(docx, labels=nlp.get_pipe('ner').labels)
     st.write(res)
 
 #Text Summarization
 elif option == 'Text Summarization':
-    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     summWords = summarize(text)
     st.subheader("Text Summary")
     st.write(summWords)
