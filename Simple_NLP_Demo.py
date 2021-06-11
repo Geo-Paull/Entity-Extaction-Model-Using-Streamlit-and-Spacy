@@ -24,7 +24,7 @@ st.sidebar.subheader("Choose NLP service")
 option = st.sidebar.selectbox('Menu:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
 
 st.sidebar.title("About this Service")
-st.sidebar.text(" This is a Text processing service,\n that auto-extracts and classifies entities, \n analyse sentiments, & summarises texts") 
+st.sidebar.text(" This is an Intelligent Text processing \n  service,that auto-extracts entities, classifies entities, \n analyse sentiments, & summarises texts") 
 st.sidebar.subheader("Intelligent tool for:")
 st.sidebar.text("                        ")
 st.sidebar.text("1. Sentiment Analysis")
