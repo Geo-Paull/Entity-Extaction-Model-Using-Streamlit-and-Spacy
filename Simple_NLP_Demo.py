@@ -115,7 +115,7 @@ elif option == 'Named Entity Recognition':
     st.write(res)
 
 #Text Summarization
-else:
+elif option == 'Text Summarization':
     summWords = summarize(text)
     st.subheader("Text Summary")
     st.write(summWords)
