@@ -27,6 +27,7 @@ st.sidebar.subheader("Kindly choose a service to start with:")
 #Picking what NLP task you want to do
 option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
+
 st.sidebar.title("Curious about Me?")
 st.sidebar.write(" I am an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
 st.sidebar.subheader("I'm popularly known for:")
@@ -55,6 +56,7 @@ st.header("Results")
 
 #Sentiment Analysis
 if option == 'Sentiment Analysis':
+    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     #Creating graph for sentiment across each sentence in the text inputted
     sents = sent_tokenize(text) #tokenizing the text data into a list of sentences
     entireText = TextBlob(text) #storing the entire text in one string
@@ -79,6 +81,7 @@ if option == 'Sentiment Analysis':
     st.write(sentimentTotal)
 
 elif option == 'Entity Extraction':
+    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     #Getting Entity and type of Entity
     entities = [] #list for all entities
     entityLabels = [] #list for type of entities
@@ -110,12 +113,14 @@ elif option == 'Entity Extraction':
 
 #Name Entity Recognizer
 elif option == 'Named Entity Recognition':
+    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     docx = nlp(text)
     res = spacy_streamlit.visualize_ner(docx, labels=nlp.get_pipe('ner').labels)
     st.write(res)
 
 #Text Summarization
 elif option == 'Text Summarization':
+    st.sidebar.success('To continue, Paste text & Run SERVICE.')
     summWords = summarize(text)
     st.subheader("Text Summary")
     st.write(summWords)
