@@ -38,10 +38,12 @@ st.subheader("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
 text = st.text_area('...', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long')
 
+st.button("RUN")
+
 #Display results of the NLP task
 st.header("Results")
 
-st.button("RUN")
+
 #Sentiment Analysis
 if option == 'Sentiment Analysis':
     #Creating graph for sentiment across each sentence in the text inputted
