@@ -17,7 +17,7 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("NLP Web Application Example")
+st.title("NLP Web Application Demo")
 st.subheader("Choose NLP service")
 
 st.sidebar.title("About this Service")
