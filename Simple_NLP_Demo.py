@@ -17,14 +17,14 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("NLP Web_App Project")
+st.title("MultiText Analytics Web_App Project")
 st.sidebar.subheader("Choose NLP service")
 
 #Picking what NLP task you want to do
-option = st.sidebar.selectbox('Menu:', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
+option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Entity Extraction', 'Text Summarization', 'Named Entity Recognizer'))
 
 st.sidebar.title("About this Service")
-st.sidebar.text(" This is an Intelligent Text processing \n  service,that auto-extracts entities, classifies entities, \n analyse sentiments, & summarises texts") 
+st.sidebar.text(" This is an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises texts") 
 st.sidebar.subheader("Intelligent tool for:")
 st.sidebar.text("                        ")
 st.sidebar.text("1. Sentiment Analysis")
