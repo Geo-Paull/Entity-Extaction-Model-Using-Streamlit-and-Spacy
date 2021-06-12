@@ -17,10 +17,10 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("ai.Paul, the Document Multi-processing Bot")
+st.title("paul.ai, the Document Multi-processing creature")
 st.sidebar.header("Welcome Human! 😊")
 st.sidebar.text("==================================")
-st.sidebar.text("I'm Paul,\nHow can I help you today?")
+st.sidebar.text("I'm Paul.ai, your text buddy!\nHow can I help you today?")
 st.sidebar.text("==================================")
 st.sidebar.subheader("Kindly choose a service to start with:")
 
@@ -29,7 +29,7 @@ option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recogni
 
 
 st.sidebar.title("Curious about Me?")
-st.sidebar.write(" I am an Intelligent Text processing \n service, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
+st.sidebar.write(" I am an Intelligent Text processing \n creature, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
 st.sidebar.subheader("I'm popularly known for:")
 st.sidebar.text("----------------------------------")
 st.sidebar.text("1. Sentiment Analysis")
@@ -45,7 +45,7 @@ st.sidebar.markdown('**pauldada.xyz**')
 st.sidebar.text('(c) 2021')
 
 #Textbox for text user is entering
-st.warning('NOTE \nAlmost there, paste text & click run SERVICE.')
+st.success('NOTE \nAlmost there, paste text & click run SERVICE.')
 # st.text("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
 text = st.text_area('Type/paste your text in the box below', value='...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
