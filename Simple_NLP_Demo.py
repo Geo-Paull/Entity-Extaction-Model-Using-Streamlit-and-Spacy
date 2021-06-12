@@ -17,8 +17,8 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("paul.ai, the Document Multi-processing creature")
-st.sidebar.header("Welcome Human! 😊")
+st.title("paul.ai, your text-processing buddy!")
+st.sidebar.header("Welcome Human! 🤩")
 st.sidebar.text("==================================")
 st.sidebar.text("I'm Paul.ai, your text buddy!\nHow can I help you today?")
 st.sidebar.text("==================================")
@@ -28,7 +28,7 @@ st.sidebar.subheader("Kindly choose a service to start with:")
 option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
 
-st.sidebar.title("Curious about Me?")
+st.sidebar.title("Curious about Me? 🤔")
 st.sidebar.write(" I am an Intelligent Text processing \n creature, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
 st.sidebar.subheader("I'm popularly known for:")
 st.sidebar.text("----------------------------------")
@@ -41,7 +41,13 @@ st.sidebar.text("==================================")
 
 st.sidebar.subheader("I was Created by:")
 st.sidebar.markdown('**Paul DADA**')
-st.sidebar.markdown('**pauldada.xyz**')
+
+st.markdown(
+    """<a href="http://pauldada.xyz">Visit Website Here!</a>""", unsafe_allow_html=True,
+)
+
+st.sidebar.markdown('**http://pauldada.xyz/**')
+
 st.sidebar.text('(c) 2021')
 
 #Textbox for text user is entering
