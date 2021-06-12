@@ -20,12 +20,12 @@ nlp = spacy.load("en_core_web_sm")
 st.title("paul.ai, your text-processing buddy!")
 st.sidebar.title("Welcome Human! 🤩")
 st.sidebar.text("==================================")
-st.sidebar.text("I'm Paul.ai, your text buddy!\nHow can I help you today?")
+st.sidebar.text("I'm paul.ai, your text buddy!\nView the Magic Box 📦 to view my abilities.\nHow can I blow your mind today? :)")
 st.sidebar.text("==================================")
-st.sidebar.subheader("Select a service to start with:")
+st.sidebar.subheader("Pick a tool to start with:")
 
 #Picking what NLP task you want to do
-option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
+option = st.sidebar.selectbox('Magic Box 📦', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
 
 st.sidebar.title("Curious about Me? 🤔")
