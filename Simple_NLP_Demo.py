@@ -130,7 +130,7 @@ elif option == 'Named Entity Recognition':
     docx = nlp(text)
     res = spacy_streamlit.visualize_ner(docx, labels=nlp.get_pipe('ner').labels)
     st.write(res)
-    st.subheader("Label KEYS")
+    st.subheader("Entity Label Explainer")
     st.text("PERSON:      People, including fictional.\nNORP:        Nationalities or religious or political groups.\nFAC:         Buildings, airports, highways, bridges, etc.\nORG:         Companies, agencies, institutions, etc.\nGPE:         Countries, cities, states.\nLOC:         Non-GPE locations, mountain ranges, bodies of water.\nPRODUCT:     Objects, vehicles, foods, etc. (Not services.)\nEVENT:       Named hurricanes, battles, wars, sports events, etc.\nWORK_OF_ART: Titles of books, songs, etc.\nLAW:         Named documents made into laws.\nLANGUAGE:    Any named language.\nDATE:        Absolute or relative dates or periods.\nTIME:        Times smaller than a day.\nPERCENT:     Percentage, including ”%“.\nMONEY:       Monetary values, including unit.\nQUANTITY:    Measurements, as of weight or distance.\nORDINAL:     “first”, “second”, etc.\nCARDINAL:    Numerals that do not fall under another type.")
 #Text Summarization
 elif option == 'Text Summarization':
