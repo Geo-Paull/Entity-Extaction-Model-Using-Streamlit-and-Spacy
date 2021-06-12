@@ -18,11 +18,11 @@ nlp = spacy.load("en_core_web_sm")
 
 #Headings for Web Application
 st.title("paul.ai, your text-processing buddy!")
-st.sidebar.header("Welcome Human! 🤩")
+st.sidebar.title("Welcome Human! 🤩")
 st.sidebar.text("==================================")
 st.sidebar.text("I'm Paul.ai, your text buddy!\nHow can I help you today?")
 st.sidebar.text("==================================")
-st.sidebar.subheader("Kindly choose a service to start with:")
+st.sidebar.subheader("Select a service to start with:")
 
 #Picking what NLP task you want to do
 option = st.sidebar.selectbox('::', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
@@ -43,15 +43,15 @@ st.sidebar.subheader("I was Created by:")
 st.sidebar.markdown('**Paul DADA**')
 
 st.sidebar.text("==================================")
-st.sidebar.title("Wanna contact my creator? 🤔")
+st.sidebar.header("Wanna contact my creator? 🤔")
 
-st.sidebar.text(
+st.sidebar.markdown(
     """<a href="http://pauldada.xyz">| Personal Website!</a>""", unsafe_allow_html=True,)
 
-st.sidebar.text(
+st.sidebar.markdown(
     """<a href="https://www.linkedin.com/in/pauldada/">| LinkedIn Page</a>""", unsafe_allow_html=True,)
 
-st.sidebar.text(
+st.sidebar.markdown(
     """<a href="https://github.com/Geo-Paull">| Github Page!</a>""", unsafe_allow_html=True,)
 
 st.sidebar.text("==================================")
