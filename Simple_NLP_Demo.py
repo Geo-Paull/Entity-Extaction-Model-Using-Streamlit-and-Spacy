@@ -17,7 +17,7 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("Paul, the Document Multi-processing Bot")
+st.title("ai.Paul, the Document Multi-processing Bot")
 st.sidebar.header("Welcome Human! 😊")
 st.sidebar.text("==================================")
 st.sidebar.text("I'm Paul,\nHow can I help you today?")
@@ -46,9 +46,9 @@ st.sidebar.text('(c) 2021')
 
 #Textbox for text user is entering
 st.warning('NOTE \nAlmost there, paste text & click run SERVICE.')
-st.text("Type/paste the text you'd like to analyze.")
+# st.text("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
-text = st.text_area('===>>>', value='Type/Paste Text Here...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
+text = st.text_area('Type/paste your text in the box below', value='...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
 
 st.button("RUN Service")
 
