@@ -60,10 +60,10 @@ st.sidebar.text("==================================")
 st.sidebar.text('Copyright (c) 2021. \nAll rights reserved')
 
 #Textbox for text user is entering
-st.success('NOTE \nAlmost there, paste text & click run SERVICE.')
+st.success('Almost there, paste text & click run SERVICE.')
 # st.text("Type/paste the text you'd like to analyze.")
 # text = st.text_input('Enter text', 'Enter Text Here')
-text = st.text_area('Type/paste your text in the box below', value='...', height=100, max_chars=None, help='Text must be more than a Sentence long.')
+text = st.text_area('Type/paste your text in the box below', value=' ', height=100, max_chars=None, help='Text must be more than a Sentence long.')
 
 st.button("RUN Service")
 
