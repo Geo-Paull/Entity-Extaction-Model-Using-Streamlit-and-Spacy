@@ -20,7 +20,7 @@ nlp = spacy.load("en_core_web_sm")
 st.title("paul.ai, your text-processing buddy!")
 st.sidebar.title("Welcome Human! 🤩")
 st.sidebar.text("==================================")
-st.sidebar.text("I'm paul.ai, your text buddy!\nView the Magic Box 📦 to view my abilities.\nHow can I blow your mind today? :)")
+st.sidebar.text("I'm paul.ai, your text buddy!\nView the Magic Box 📦 for my abilities.\nHow can I blow your mind today? :)")
 st.sidebar.text("==================================")
 st.sidebar.subheader("Pick a tool to start with:")
 
@@ -28,7 +28,7 @@ st.sidebar.subheader("Pick a tool to start with:")
 option = st.sidebar.selectbox('Magic Box 📦', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
 
 
-st.sidebar.title("Curious about Me? 🤔")
+st.sidebar.title("_Curious about Me? 🤔")
 st.sidebar.write(" I am an Intelligent Text processing \n creature, that auto-extracts entities,\n classifies entities, \n analyse sentiments, & summarises your texts...") 
 st.sidebar.subheader("I'm popularly known for:")
 st.sidebar.text("----------------------------------")
@@ -39,11 +39,10 @@ st.sidebar.text("4. Name Entity Recognition [NER]")
 
 st.sidebar.text("==================================")
 
-st.sidebar.subheader("I was Created by:")
-st.sidebar.markdown('**Paul DADA**')
+# st.sidebar.subheader("_I was Created by:")
 
-st.sidebar.text("==================================")
-st.sidebar.header("Wanna contact my creator? 🤔")
+st.sidebar.header("_meet my creator 😇")
+st.sidebar.markdown('NAME: **Paul DADA**')
 
 st.sidebar.markdown(
     """<a href="http://pauldada.xyz">| Personal Website!</a>""", unsafe_allow_html=True,)
