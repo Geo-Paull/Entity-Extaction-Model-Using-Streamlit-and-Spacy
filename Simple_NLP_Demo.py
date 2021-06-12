@@ -131,9 +131,7 @@ elif option == 'Named Entity Recognition':
     res = spacy_streamlit.visualize_ner(docx, labels=nlp.get_pipe('ner').labels)
     st.write(res)
     st.subheader("Label KEYS")
-    st.write("PERSON: People, including fictional.\n NORP:        Nationalities or religious or political groups.\nFAC:         Buildings, airports, highways, bridges, etc.\nORG:         Companies, agencies, institutions, etc.\nGPE:         Countries, cities, states.\nLOC:         Non-GPE locations, mountain ranges, bodies of water.\n")
-
-")
+    st.text("PERSON: People, including fictional.\n NORP:        Nationalities or religious or political groups.\nFAC:         Buildings, airports, highways, bridges, etc.\nORG:         Companies, agencies, institutions, etc.\nGPE:         Countries, cities, states.\nLOC:         Non-GPE locations, mountain ranges, bodies of water.\n")
 #Text Summarization
 elif option == 'Text Summarization':
     summWords = summarize(text)
