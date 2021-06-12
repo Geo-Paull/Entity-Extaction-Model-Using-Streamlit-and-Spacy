@@ -25,7 +25,7 @@ st.sidebar.text("==================================")
 st.sidebar.subheader("Pick a tool to start with:")
 
 #Picking what NLP task you want to do
-option = st.sidebar.selectbox('Magic Box 📦', ('Sentiment Analysis', 'Named Entity Recognition', 'Text Summarization', 'Entity Extraction'))
+option = st.sidebar.selectbox('Magic Box 📦', ('Named Entity Recognition', 'Text Summarization', 'Sentiment Analysis', 'Entity Extraction'))
 
 
 st.sidebar.title("_Curious about Me? 🤔")
