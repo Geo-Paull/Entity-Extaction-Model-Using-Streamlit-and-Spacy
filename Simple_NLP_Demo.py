@@ -17,8 +17,8 @@ nlp = spacy.load("en_core_web_sm")
 
 
 #Headings for Web Application
-st.title("paul.ai, your text-processing buddy!")
-st.sidebar.title("Welcome Human! 🤩")
+st.title("_paul.ai, your text-processing buddy!")
+st.sidebar.title("_Welcome Human! 🤩")
 st.sidebar.text("==================================")
 st.sidebar.text("I'm paul.ai, your text buddy!\nView the Magic Box 📦 for my abilities.\nHow can I blow your mind today? :)")
 st.sidebar.text("==================================")
@@ -42,10 +42,11 @@ st.sidebar.text("==================================")
 # st.sidebar.subheader("_I was Created by:")
 
 st.sidebar.header("_meet my creator 😇")
+st.sidebar.text("----------------------------------")
 st.sidebar.markdown('NAME: **Paul DADA**')
 
 st.sidebar.markdown(
-    """<a href="http://pauldada.xyz">| Personal Website!</a>""", unsafe_allow_html=True,)
+    """<a href="http://pauldada.xyz">| Personal Website</a>""", unsafe_allow_html=True,)
 
 st.sidebar.markdown(
     """<a href="https://www.linkedin.com/in/pauldada/">| LinkedIn Page</a>""", unsafe_allow_html=True,)
