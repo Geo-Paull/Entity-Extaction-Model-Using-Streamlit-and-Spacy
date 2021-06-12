@@ -45,19 +45,19 @@ st.sidebar.markdown('**Paul DADA**')
 st.sidebar.text("==================================")
 st.sidebar.title("Wanna contact my creator? 🤔")
 
-st.sidebar.markdown(
+st.sidebar.text(
     """<a href="http://pauldada.xyz">| Personal Website!</a>""", unsafe_allow_html=True,)
 
-st.sidebar.markdown(
+st.sidebar.text(
     """<a href="https://www.linkedin.com/in/pauldada/">| LinkedIn Page</a>""", unsafe_allow_html=True,)
 
-st.sidebar.markdown(
+st.sidebar.text(
     """<a href="https://github.com/Geo-Paull">| Github Page!</a>""", unsafe_allow_html=True,)
 
 st.sidebar.text("==================================")
 # st.sidebar.markdown('**http://pauldada.xyz/**')
 
-st.sidebar.text('Copyright (c) 2021 . All rights reserved')
+st.sidebar.text('Copyright (c) 2021. All rights reserved')
 
 #Textbox for text user is entering
 st.success('NOTE \nAlmost there, paste text & click run SERVICE.')
