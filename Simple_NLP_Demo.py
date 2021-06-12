@@ -57,7 +57,7 @@ st.sidebar.markdown(
 st.sidebar.text("==================================")
 # st.sidebar.markdown('**http://pauldada.xyz/**')
 
-st.sidebar.text('Copyright (c) 2021. All rights reserved')
+st.sidebar.text('Copyright (c) 2021. \nAll rights reserved')
 
 #Textbox for text user is entering
 st.success('NOTE \nAlmost there, paste text & click run SERVICE.')
