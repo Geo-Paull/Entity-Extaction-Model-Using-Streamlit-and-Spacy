@@ -132,23 +132,23 @@ elif option == 'Named Entity Recognition':
     st.write(res)
     st.subheader("Label KEYS")
     st.text("PERSON:      People, including fictional.\n
-NORP:        Nationalities or religious or political groups.\n
-FAC:         Buildings, airports, highways, bridges, etc.\n
-ORG:         Companies, agencies, institutions, etc.\n
-GPE:         Countries, cities, states.\n
-LOC:         Non-GPE locations, mountain ranges, bodies of water.\n
-PRODUCT:     Objects, vehicles, foods, etc. (Not services.)\n
-EVENT:       Named hurricanes, battles, wars, sports events, etc.\n
-WORK_OF_ART: Titles of books, songs, etc.\n
-LAW:         Named documents made into laws.\n
-LANGUAGE:    Any named language.\n
-DATE:        Absolute or relative dates or periods.\n
-TIME:        Times smaller than a day.\n
-PERCENT:     Percentage, including ”%“.\n
-MONEY:       Monetary values, including unit.\n
-QUANTITY:    Measurements, as of weight or distance.\n
-ORDINAL:     “first”, “second”, etc.\n
-CARDINAL:    Numerals that do not fall under another type.")
+    NORP:        Nationalities or religious or political groups.\n
+    FAC:         Buildings, airports, highways, bridges, etc.\n
+    ORG:         Companies, agencies, institutions, etc.\n
+    GPE:         Countries, cities, states.\n
+    LOC:         Non-GPE locations, mountain ranges, bodies of water.\n
+    PRODUCT:     Objects, vehicles, foods, etc. (Not services.)\n
+    EVENT:       Named hurricanes, battles, wars, sports events, etc.\n
+    WORK_OF_ART: Titles of books, songs, etc.\n
+    LAW:         Named documents made into laws.\n
+    LANGUAGE:    Any named language.\n
+    DATE:        Absolute or relative dates or periods.\n
+    TIME:        Times smaller than a day.\n
+    PERCENT:     Percentage, including ”%“.\n
+    MONEY:       Monetary values, including unit.\n
+    QUANTITY:    Measurements, as of weight or distance.\n
+    ORDINAL:     “first”, “second”, etc.\n
+    CARDINAL:    Numerals that do not fall under another type.")
 
 #Text Summarization
 elif option == 'Text Summarization':
